@@ -18,9 +18,9 @@ $submit.on("click", function (event) {
 
 //make a get request  to the giphy api//
 function getGiphys(inputVal) {
-    $.get('http://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=5')
+    $.get('http://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=15')
         .done(function (data) {
-            for (var i = 0; i <= 5; i++) {
+            for (var i = 0; i <= 15; i++) {
                 var gifImg = (data.data[i].images.downsized.url);
                 createBox(gifImg);
             }

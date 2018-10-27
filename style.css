@@ -1,6 +1,15 @@
+body {
+    background-color: #3cb371;
+}
+
 .img-box {
     height: 150px;
     width: 150px;
     border: 1px solid black;
     float: left;
+    border: 2px solid #ffa500;
+}
+
+.form-group {
+    border: 2px solid darkblue;
 }
